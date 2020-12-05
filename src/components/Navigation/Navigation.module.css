@@ -1,0 +1,11 @@
+.container a{
+    margin: 0.5rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: #343a40;
+    font-size: 1rem;
+}
+
+.container a:hover{
+    color: #121416;;
+} 

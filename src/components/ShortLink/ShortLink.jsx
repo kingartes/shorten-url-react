@@ -1,4 +1,6 @@
 import React, {useCallback, useState} from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const ShortLink = () => {
     const [link, setLink] = useState('');
@@ -11,8 +13,8 @@ const ShortLink = () => {
 
     return (
         <>
-            <input width={400} value={link} onChange={inputOnChangeHandler}></input>
-            <button onClick={buttonClickHandler}>Get short link</button>
+            <Form.Control width={400} value={link} onChange={inputOnChangeHandler}></Form.Control>
+            <Button onClick={buttonClickHandler} variant="primary">Get short link</Button>
         </>
     )
 }
