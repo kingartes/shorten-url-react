@@ -1,4 +1,5 @@
 export const APPLICATION_ROUTES = {
     HOME: "/",
-    PRIVACY: "/privacy"
+    PRIVACY: "/privacy",
+    REGISTER: '/register'
 }

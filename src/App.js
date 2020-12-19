@@ -5,17 +5,21 @@ import Navigation from './components/Navigation/Navigation';
 import PrivacyPage from './pages/Privacy';
 import HomePage from './pages/Home';
 import { APPLICATION_ROUTES } from './constants/routes';
+import RegisterPage from './pages/Register';
 
 function App() {
   return (
     <Router>
         <div className="App">
             <Switch >
+            <Route path={APPLICATION_ROUTES.REGISTER}>
+                <RegisterPage />
+              </Route>
               <Route path={APPLICATION_ROUTES.PRIVACY}>
-                <PrivacyPage></PrivacyPage>
+                <PrivacyPage />
               </Route>
               <Route path={APPLICATION_ROUTES.HOME}>
-                <HomePage></HomePage>
+                <HomePage />
               </Route>
             </Switch>
         </div>

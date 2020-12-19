@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import registrationReducer from '../components/Registration/redux/registrationSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    registrationForm: registrationReducer,
   },
 });

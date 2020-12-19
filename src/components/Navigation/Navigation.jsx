@@ -8,6 +8,7 @@ const Navigation = ({className}) => {
         <nav className={`${styles.container} ${className}`}>
             <Link to={APPLICATION_ROUTES.HOME}>Home</Link>
             <Link to={APPLICATION_ROUTES.PRIVACY}>Privacy</Link>
+            <Link to={APPLICATION_ROUTES.REGISTER}>Register</Link>
         </nav>
     )
 }
